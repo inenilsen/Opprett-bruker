@@ -2,10 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -15,56 +11,69 @@
     <title>Opprett bruker</title>
   </head>
   <body>
-    <div class="container">
-      <div class="info">
-        <h1>Informasjon</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta velit
-          quia temporibus saepe fugit repellendus officia, debitis nostrum illo
-          possimus eligendi. Est molestiae ratione quibusdam laborum animi
-          repudiandae deleniti non.
-          <br />
-          <br />
-          <b>Eu ultrices:</b> Dicta velit quia temporibus saepe fugit
-          repellendus officia, debitis nostrum illo possimus eligendi. Est
-          molestiae ratione quibusdam laborum animi repudiandae deleniti non.
-        </p>
-        <button id="btn-w">Jeg har konto</button>
-      </div>
-      <div class="opprett">
-        <h1>Opprett bruker</h1>
-        <div class="usr">
-          <div class="sir">
-            <label>Fornavn</label>
-            <input type="text" class="usr-icon" />
-          </div>
-          <div class="last">
-            <label>Etternavn</label>
-            <input type="text" />
-          </div>
-        </div>
-        <div class="epost">
-          <label>E-postadresse</label>
-          <input type="email" name="E-postadresse" id="epost" />
-        </div>
-        <div class="psw">
-          <div class="psw-fst">
-            <label>Passord</label>
-            <input type="text" class="psw-icon" />
-          </div>
-          <div class="psw-snd">
-            <label>Gjenta passord</label>
-            <input type="text" class="psw-icon" />
-          </div>
-        </div>
-        <div class="personvern">
+    <form method="POST" action="/submit-form">
+      <div class="container">
+        <div class="info">
+          <h1>Informasjon</h1>
           <p>
-            <input type="checkbox" name="Godta" id="godta" /> Jeg godtar
-            <a href="http://databehandligsavtalen...">Databehandligsavtalen</a>.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            velit quia temporibus saepe fugit repellendus officia, debitis
+            nostrum illo possimus eligendi. Est molestiae ratione quibusdam
+            laborum animi repudiandae deleniti non.
+            <br />
+            <br />
+            <b>Eu ultrices:</b> Dicta velit quia temporibus saepe fugit
+            repellendus officia, debitis nostrum illo possimus eligendi. Est
+            molestiae ratione quibusdam laborum animi repudiandae deleniti non.
           </p>
+          <button id="btn-w">Jeg har konto</button>
         </div>
-        <button id="btn-b">Registrer</button>
+        <div class="opprett">
+          <h1>Opprett bruker</h1>
+          <div class="usr">
+            <div class="sir">
+              <label>Fornavn</label>
+              <input type="text" name="sir" />
+            </div>
+            <div class="last">
+              <label>Etternavn</label>
+              <input type="text" name="last" />
+            </div>
+          </div>
+          <div class="epost">
+            <label>E-postadresse</label>
+            <input type="email" name="epost" id="epost" required />
+          </div>
+          <div class="psw">
+            <div class="psw-fst">
+              <label>Passord</label>
+              <input
+                type="password"
+                name="password"
+                class="psw-icon"
+                required
+              />
+            </div>
+            <div class="psw-snd">
+              <label>Gjenta passord</label>
+              <input
+                type="password"
+                name="confirm-password"
+                class="psw-icon"
+                required
+              />
+            </div>
+          </div>
+          <div class="personvern">
+            <p>
+              <input type="checkbox" name="personvern" id="godta" /> Jeg godtar
+              <a href="http://databehandligsavtalen...">Databehandligsavtalen</a
+              >.
+            </p>
+          </div>
+          <button type="submit" id="btn-b" class="sub-btn">Registrer</button>
+        </div>
       </div>
-    </div>
+    </form>
   </body>
 </html>

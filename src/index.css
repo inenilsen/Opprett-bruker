@@ -153,13 +153,15 @@ input[type=checkbox]{
 }
 
 .psw-icon {
-  background: url('../public/reload.png')no-repeat right;
-  background-size: 20px;
+  height: 2rem;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .usr-icon {
-  background: url('../public/user.png')no-repeat right;
-  background-size: 20px;
+  height: 2rem;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 @media only screen and (max-width: 970px){
