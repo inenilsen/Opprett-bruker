@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Opprett(){
+export default function Create(){
     return(
         <div class = "opprett">
             <h1>Opprett bruker</h1>
