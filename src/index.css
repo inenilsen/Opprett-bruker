@@ -5,8 +5,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  padding: 8.5rem 7rem 8.5rem 7rem;
+  padding: 10% 20% 10% 20%;
   background: linear-gradient(0deg, rgba(0,95,179,1) 0%, rgba(144,229,255,1) 100%);
+  min-height: 100vh;
 }
 
 code {
@@ -165,7 +166,7 @@ input[type=checkbox]{
 }
 
 @media only screen and (max-width: 970px){
-  /* Tablets? */
+  /* Tablet size? */
   .container{
     display: flex;
     flex-direction: column;
