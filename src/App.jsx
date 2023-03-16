@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './App.css'
 import Info from './Info'
 import Opprett from './Opprett'
 
