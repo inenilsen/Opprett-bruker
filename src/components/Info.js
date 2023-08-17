@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Info() {
     return (
-        <div class="info">
+        <div className="info">
             <h1>Informasjon</h1>
             <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
