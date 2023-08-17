@@ -60,38 +60,38 @@ export default function Create(){
     };
 
     return(
-        <div class = "opprett">
+        <div className = "opprett">
             <h1>Opprett bruker</h1>
             <form onSubmit={usrReg}>
 
                 {/*Fornavn og etternavn*/}
-                <div class="usr">
-                    <div class="first">
+                <div className="usr">
+                    <div className="first">
                         <label>Fornavn</label>
                         <input type="text" name="first" value={first} onChange={(e) => setFirst(e.target.value)}/>
                     </div>
-                    <div class="last">
+                    <div className="last">
                         <label>Etternavn</label>
                         <input type="text" name="last" value={last} onChange={(e) => setLast(e.target.value)}/>
                     </div>
                 </div>
 
                 {/*E-post*/}
-                <div class="epost">
+                <div className="epost">
                     <label>E-postadresse</label>
                     <input type="email" name="epost" id="epost" value={email} onChange={(e) => setEmail(e.target.value)} required/>
                 </div>
 
                 {/*Passord*/}
-                <div class="psw">
-                    <div class="psw-fst">
+                <div className="psw">
+                    <div className="psw-fst">
                         <label htmlFor="password">Passord</label>
                         <input type="password" name="password" id="password" className="psw-icon" value={psw} onChange={e => {
                             setPsw(e.target.value);
                             checkPsw();
                             }} required/>
                     </div>
-                    <div class="psw-snd">
+                    <div className="psw-snd">
                         <label htmlFor="confirm-password">Gjenta passord</label>
                         <input type="password" name="confirm-password" id="confirm-password" className="psw-icon" value={conPsw} onChange={e => {
                             setConPsw(e.target.value);
@@ -102,7 +102,7 @@ export default function Create(){
                 </div>
 
                 {/*Personvern*/}
-                <div class="personvern">
+                <div className="personvern">
                     <p>
                         <input type="checkbox" name="personvern" id="godta" checked={accept} onChange={(e) => setAccept(e.target.checked)}/>
                         Jeg godtar <a href="http://databehandligsavtalen...">Databehandligsavtalen</a>.
@@ -110,7 +110,7 @@ export default function Create(){
                 </div>
 
                 {/*Submit knapp*/}
-                <button type="submit" id="btn-b" class="sub-btn">Registrer</button>
+                <button type="submit" id="btn-b" className="sub-btn">Registrer</button>
             </form>
         </div>
     );

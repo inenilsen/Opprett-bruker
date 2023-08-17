@@ -21,7 +21,7 @@ code {
 .info{
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  flex: 1;
+  /* flex: 1; */
   padding: 4rem;
   color: white;
   background: rgba(0,95,179,1);
@@ -30,7 +30,7 @@ code {
 .opprett{
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  flex: 1;
+  /* flex: 1; */
   background-color: white;
   font-weight: bold;
   padding: 4rem;
